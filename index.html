@@ -50,18 +50,18 @@
         </div>
         <!--/.navbar-collapse-->
     </div><!-- /.container-fluid -->
-    <div class="next-page-nav clearNav">
-        <a href="#past" class="next-page-link void">
-            <span class="link-x1"></span>
-            <span class="link-x2"></span>
-        </a>
-    </div>
+    <!--<div class="next-page-nav clearNav">-->
+        <!--<a href="#past" class="next-page-link void">-->
+            <!--<span class="link-x1"></span>-->
+            <!--<span class="link-x2"></span>-->
+        <!--</a>-->
+    <!--</div>-->
 </nav>
 
 <section id="hero" class="hero-section">
     <div class="hero-text">
         <h1>Harrison Reed Wallin</h1>
-        <h2>Front-end Developer / Web Designer</h2>
+        <h2>Front-end Developer / <span class="text-nowrap">Graphic Designer</span></h2>
     </div>
 </section><!--/.hero-section-->
 
@@ -71,6 +71,7 @@
             <div class="col-xs-12 col-md-5 section-info">
                 <h1>Past</h1>
                 <p>During my advertising and art studies at the University of Nebraska-Lincoln, I fell in love with web design and development.  Here are just a few examples of my recent front-end development work and graphic design projects.</p>
+                <span class="next-page-link"></span>
             </div>
             <div class="col-xs-12 col-md-6 col-md-offset-1">
                 <div class="portfolio-boxes">
@@ -215,7 +216,7 @@
         <div class="row">
             <div class="col-xs-12 col-lg-5 col-lg-offset-1 pull-right section-info">
                 <h1>Present</h1>
-                <p>Since graduating college in 2014, I have continued studying web development and have kept up with recent web design trends. Here are just a few of the skills that I currently posses as I actively pursue web development even further.</p>
+                <p>Since graduating college in 2014, I have continued studying web development and have kept up with recent web design trends. Here are just a few of the skills that I currently possess as I actively pursue web development even further.</p>
             </div>
             <div class="col-xs-12 col-lg-6 text-center">
                 <div class="skill">
@@ -240,7 +241,7 @@
                     <p>InDesign</p>
                 </div>
                 <div class="skill">
-                    <p>Wordpress</p>
+                    <p>WordPress</p>
                 </div>
                 <div class="skill">
                     <p>Responsive</p>
@@ -268,9 +269,8 @@
                     <a href="https://www.facebook.com/harrison.wallin" target="_blank"><img src="images/social-facebook.png" alt="Facebook"/></a>
                     <a href="https://twitter.com/HarrisonWallin" target="_blank"><img src="images/social-twitter.png" alt="Twitter"/></a>
                 </div>
-
-                <form>
-                    <h2>Drop me a line</h2>
+                <h2>Drop me a line</h2>
+                <form method="post" name="email_form" action="send-email.php">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 form-group">
                             <label for="name">Name</label>
@@ -349,8 +349,8 @@
             var next_button         = $(".next-page-link");
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
-                var pastDistance = $('.past-section').offset().top;
-                var presentDistance = $('.present-section').offset().top;
+//                var pastDistance = $('.past-section').offset().top;
+//                var presentDistance = $('.present-section').offset().top;
 
                 if (scroll > windowHeight - 100) {
                     header.removeClass('clearHeader').addClass("scroll-bar");
@@ -358,25 +358,25 @@
                     header.removeClass("scroll-bar").addClass('clearHeader');
                 }
 
-                if (scroll <= pastDistance - 500) {
-                    next_button.removeClass('past');
-                    $(".next-page-link").attr("href", "#past");
-                } else {
-                    next_button.addClass('past');
-                    $(".next-page-link").attr("href", "#present");
-                }
-                if (scroll <= pastDistance + 10) {
-                    next_button.removeClass('present');
-                } else {
-                    next_button.addClass('present');
-                    $(".next-page-link").attr("href", "#future");
-                }
-                if (scroll <= presentDistance + 10) {
-                    next_button_wrapper.fadeIn();
-                } else {
-                    next_button_wrapper.fadeOut();
-                    $(".next-page-link").attr("href", "#hero");
-                }
+//                if (scroll <= pastDistance - 500) {
+//                    next_button.removeClass('past');
+//                    $(".next-page-link").attr("href", "#past");
+//                } else {
+//                    next_button.addClass('past');
+//                    $(".next-page-link").attr("href", "#present");
+//                }
+//                if (scroll <= pastDistance + 10) {
+//                    next_button.removeClass('present');
+//                } else {
+//                    next_button.addClass('present');
+//                    $(".next-page-link").attr("href", "#future");
+//                }
+//                if (scroll <= presentDistance + 10) {
+//                    next_button_wrapper.fadeIn();
+//                } else {
+//                    next_button_wrapper.fadeOut();
+//                    $(".next-page-link").attr("href", "#hero");
+//                }
 
             });
         });
