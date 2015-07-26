@@ -12,4 +12,7 @@
 
     mail($to,$subject,$email_body,$headers);
 
+    header('Location: /#future');
+    die();
+
 ?>
