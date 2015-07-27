@@ -27,7 +27,7 @@
 
 <body>
 
-<nav class="navbar clearHeader">
+<nav class="navbar fixed clearHeader">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main" aria-expanded="false">
@@ -39,34 +39,28 @@
         <a href="#hero" class="site-logo">
             <svg version="1.1" id="Layer_1" x="0px" y="0px" width="351.8px" height="351.9px" viewBox="0 0 351.8 351.9" style="enable-background:new 0 0 351.8 351.9;" xml:space="preserve"><path class="st0" d="M175.8,14.1c89.3,0,161.9,72.6,161.9,161.9c0,89.3-72.6,161.9-161.9,161.9c-89.3,0-161.9-72.6-161.9-161.9C13.9,86.7,86.6,14.1,175.8,14.1 M175.8,0C78.6,0-0.1,78.8-0.1,176c0,97.2,78.8,176,176,176c97.2,0,176-78.8,176-176C351.8,78.8,273,0,175.8,0L175.8,0z"/><g><path class="st0 site-logo" d="M128.7,172.8v-59h15.5v124.2h-15.5v-52.9H85.2v52.9H69.7V113.9h15.5v59H128.7z"/><path class="st0" d="M150.7,185.5h-6.4v52.5h-15.5V113.9h18.8c11,0,22.9,0.2,32.8,5.8c10.4,6.1,16.3,17.8,16.3,29.6c0,17.8-11.9,32.6-29.8,34.8C166.8,184,158.9,185.5,150.7,185.5z M144.3,172.7h4.9c15.8,0,32.9-3,32.9-22.7c0-19.4-18.4-22.2-33.8-22.2h-4.1V172.7z"/><path class="st0" d="M186.9,198.4l28.4-76l26.2,76l25.8-84.5h14.6l-40.4,123.7l-26.2-77.5l-28.4,77.5l-22-58.5l12.2-10L186.9,198.4z"/></g></svg>
         </a>
-
-         <!--Collect the nav links, forms, and other content for toggling-->
         <div id="nav-main" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class=""><a href="#past">Past</a></li>
+                <li><a href="#past">Past</a></li>
                 <li><a href="#present">Present</a></li>
                 <li><a href="#future">Future</a></li>
             </ul>
-        </div>
-        <!--/.navbar-collapse-->
+        </div><!--/.navbar-collapse-->
     </div><!-- /.container-fluid -->
-    <!--<div class="next-page-nav clearNav">-->
-        <!--<a href="#past" class="next-page-link void">-->
-            <!--<span class="link-x1"></span>-->
-            <!--<span class="link-x2"></span>-->
-        <!--</a>-->
-    <!--</div>-->
 </nav>
 
-<section id="hero" class="hero-section">
+<section id="hero" class="hero-section full">
     <div class="hero-text">
         <h1>Harrison Reed Wallin</h1>
         <h2>Front-end Developer / <span class="text-nowrap">Graphic Designer</span></h2>
+        <a href="#past" class="view-site"><img src="/images/icon-arrow-down.svg"/></a>
     </div>
 </section><!--/.hero-section-->
 
-<section id="past" class="page past-section">
+<section id="past" class="page past-section full">
     <div class="container">
+        <div class="bg-square"></div>
+        <div class="bg-square-small"></div>
         <div class="row">
             <div class="col-xs-12 col-md-5 section-info">
                 <h1>Past</h1>
@@ -156,7 +150,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <div class="portfolio-box">
-                            <a href="">
+                            <a href="/portfolio/jdays.html">
                                 <div class="portfolio-box-content content-jdays"></div>
                             </a>
                             <div class="portfolio-box-info">
@@ -166,7 +160,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <div class="portfolio-box">
-                            <a href="">
+                            <a href="/portfolio/lmbc.html">
                                 <div class="portfolio-box-content content-lincoln-midwest-ballet"></div>
                             </a>
                             <div class="portfolio-box-info">
@@ -174,19 +168,19 @@
                             </div>
                         </div>
                     </div>
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="portfolio-box">-->
+                            <!--<a href="">-->
+                                <!--<div class="portfolio-box-content content-chevy-cruze"></div>-->
+                            <!--</a>-->
+                            <!--<div class="portfolio-box-info">-->
+                                <!--<h3>Chevy Cruze</h3>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
                     <div class="col-xs-12 col-sm-6">
                         <div class="portfolio-box">
-                            <a href="">
-                                <div class="portfolio-box-content content-chevy-cruze"></div>
-                            </a>
-                            <div class="portfolio-box-info">
-                                <h3>Chevy Cruze</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="portfolio-box">
-                            <a href="">
+                            <a href="/portfolio/clockwork.html">
                                 <div class="portfolio-box-content content-clockwork-orange"></div>
                             </a>
                             <div class="portfolio-box-info">
@@ -196,7 +190,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <div class="portfolio-box">
-                            <a href="">
+                            <a href="/portfolio/animal-farm.html">
                                 <div class="portfolio-box-content content-animal-farm"></div>
                             </a>
                             <div class="portfolio-box-info">
@@ -206,7 +200,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <div class="portfolio-box">
-                            <a href="">
+                            <a href="/portfolio/logos.html">
                                 <div class="portfolio-box-content content-logos"></div>
                             </a>
                             <div class="portfolio-box-info">
@@ -218,13 +212,13 @@
 
             </div>
         </div>
-        <div class="bg-square"></div>
-        <div class="bg-square-small"></div>
     </div>
 </section><!--/.past-section-->
 
-<section id="present" class="page present-section">
+<section id="present" class="page present-section full">
     <div class="container">
+        <div class="bg-circle"></div>
+        <div class="bg-circle-small"></div>
         <div class="row">
             <div class="col-xs-12 col-lg-5 col-lg-offset-1 pull-right section-info">
                 <h1>Present</h1>
@@ -260,13 +254,15 @@
                 </div>
             </div>
         </div>
-        <div class="bg-circle"></div>
-        <div class="bg-circle-small"></div>
     </div>
 </section><!--/.present-section-->
 
-<section id="future" class="page future-section">
+<section id="future" class="page future-section full">
     <div class="container">
+        <div class="bg-x1"></div>
+        <div class="bg-x2"></div>
+        <div class="bg-large-x1"></div>
+        <div class="bg-large-x2"></div>
         <div class="row">
             <div class="col-xs-12 col-md-5 section-info">
                 <h1>Future</h1>
@@ -279,8 +275,8 @@
                     <a href="https://www.facebook.com/harrison.wallin" target="_blank"><img src="images/social-facebook.png" alt="Facebook"/></a>
                     <a href="https://twitter.com/HarrisonWallin" target="_blank"><img src="images/social-twitter.png" alt="Twitter"/></a>
                 </div>
-                <h2>Drop me a line</h2>
                 <form method="post" name="email_form" action="send-email.php">
+                    <h2>Drop me a line</h2>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 form-group">
                             <label for="name">Name</label>
@@ -305,16 +301,12 @@
                 </form>
             </div>
         </div>
-        <div class="bg-x1"></div>
-        <div class="bg-x2"></div>
-        <div class="bg-large-x1"></div>
-        <div class="bg-large-x2"></div>
     </div>
 </section><!--/.future-section-->
 
 <footer class="site-footer">
     <div class="container">
-        <strong>Harrison Reed Wallin / Front-End Developer</strong><br />
+        <strong>Harrison Reed Wallin / <span class="text-nowrap">Front-End Developer</span></strong><br />
         <a href="mailto:harriosnwallin@gmail.com">harrisonwallin@gmail.com</a>
     </div>
 </footer><!--/.site-footer-->
@@ -327,7 +319,7 @@
 
         // Smooth Scroll
         $(function() {
-            $('nav a[href*=#]:not([href=#])').click(function() {
+            $('nav a[href*=#]:not([href=#]), .view-site').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -366,35 +358,11 @@
             var next_button         = $(".next-page-link");
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
-//                var pastDistance = $('.past-section').offset().top;
-//                var presentDistance = $('.present-section').offset().top;
-
                 if (scroll > windowHeight - 100) {
                     header.removeClass('clearHeader').addClass("scroll-bar");
                 } else {
                     header.removeClass("scroll-bar").addClass('clearHeader');
                 }
-
-//                if (scroll <= pastDistance - 500) {
-//                    next_button.removeClass('past');
-//                    $(".next-page-link").attr("href", "#past");
-//                } else {
-//                    next_button.addClass('past');
-//                    $(".next-page-link").attr("href", "#present");
-//                }
-//                if (scroll <= pastDistance + 10) {
-//                    next_button.removeClass('present');
-//                } else {
-//                    next_button.addClass('present');
-//                    $(".next-page-link").attr("href", "#future");
-//                }
-//                if (scroll <= presentDistance + 10) {
-//                    next_button_wrapper.fadeIn();
-//                } else {
-//                    next_button_wrapper.fadeOut();
-//                    $(".next-page-link").attr("href", "#hero");
-//                }
-
             });
         });
 
